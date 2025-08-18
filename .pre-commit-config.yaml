@@ -1,0 +1,48 @@
+repos:
+  # Ruff - Python linting and formatting
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.9
+    hooks:
+      # Run the linter
+      - id: ruff
+        name: ruff check
+        args: [--fix]
+      # Run the formatter
+      - id: ruff-format
+        name: ruff format
+
+  # MyPy - Static type checking
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.17.1
+    hooks:
+      - id: mypy
+        name: mypy type check
+        # Pass the same args as in pyproject.toml
+        args: [--strict]
+        additional_dependencies: [pytest]
+
+  # Built-in hooks for common issues
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        name: trim trailing whitespace
+      - id: end-of-file-fixer
+        name: fix end of files
+      - id: check-yaml
+        name: check yaml syntax
+      - id: check-toml
+        name: check toml syntax
+      - id: check-merge-conflict
+        name: check for merge conflicts
+      - id: check-added-large-files
+        name: check for large files
+
+  # Check for common security issues
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.8.1
+    hooks:
+      - id: bandit
+        name: bandit security check
+        args: [-c, pyproject.toml]
+        additional_dependencies: ["bandit[toml]"]
