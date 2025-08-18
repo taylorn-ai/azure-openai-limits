@@ -20,8 +20,16 @@ limits = get_limits("gpt-4o")
 print(f"Context: {limits.context}, Output: {limits.output}")
 
 # Get limits for a specific version
-limits = get_limits("gpt-4o", "2024-08-06")
+limits = get_limits("gpt-4o", "2024-05-13")
 print(f"Context: {limits.context}, Output: {limits.output}")
+
+# Try the new O3 Pro model
+limits = get_limits("o3-pro")
+print(f"O3 Pro - Context: {limits.context}, Output: {limits.output}")
+
+# Check Codex Mini limits
+limits = get_limits("codex-mini")
+print(f"Codex Mini - Context: {limits.context}, Output: {limits.output}")
 
 # Get just context or output limits
 context = context_limit("gpt-4o")
@@ -53,27 +61,32 @@ azure-openai-limits list
 azure-openai-limits show gpt-4o
 
 # Show limits for a specific model version
-azure-openai-limits show gpt-4o --version 2024-08-06
+azure-openai-limits show gpt-4o --version 2024-05-13
+
+# Check out the new O3 Pro model
+azure-openai-limits show o3-pro
 ```
 
 ## Supported Models
 
 The package includes limits for the following Azure OpenAI models:
 
-- GPT-3.5 Turbo (gpt-35-turbo)
-- GPT-3.5 Turbo Instruct (gpt-35-turbo-instruct)
-- GPT-4 (gpt-4, gpt-4-32k)
-- GPT-4 Turbo (gpt-4.1, gpt-4.1-mini, gpt-4.1-nano)
-- GPT-4.5 Preview (gpt-4.5-preview)
-- GPT-4o (gpt-4o, gpt-4o-mini)
-- GPT-4o Audio and Realtime models
-- GPT-5 (gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-chat)
-- O1 models (o1, o1-mini, o1-preview)
-- O3 models (o3, o3-mini)
-- O4 models (o4-mini)
-- Model Router (model-router)
+- **Codex**: codex-mini
+- **GPT-3.5**: gpt-35-turbo, gpt-35-turbo-instruct
+- **GPT-4**: gpt-4, gpt-4-32k
+- **GPT-4 Turbo**: gpt-4.1, gpt-4.1-mini, gpt-4.1-nano
+- **GPT-4.5**: gpt-4.5-preview
+- **GPT-4o**: gpt-4o, gpt-4o-mini
+- **GPT-4o Audio**: gpt-4o-audio-preview, gpt-4o-mini-audio-preview
+- **GPT-4o Realtime**: gpt-4o-realtime-preview, gpt-4o-mini-realtime-preview
+- **GPT-5**: gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-chat
+- **GPT OSS**: gpt-oss-20b, gpt-oss-120b
+- **O1 Models**: o1, o1-mini, o1-preview
+- **O3 Models**: o3, o3-mini, o3-pro
+- **O4 Models**: o4-mini
+- **Model Router**: model-router
 
-Each model may have multiple versions with different limits.
+Each model may have multiple versions with different limits. Use `azure-openai-limits list` to see all available models and their versions.
 
 ## Data Source
 

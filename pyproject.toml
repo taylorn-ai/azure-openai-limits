@@ -73,4 +73,5 @@ skips = ["B101"]  # Skip assert_used test
 dev = [
     "bandit>=1.8.6",
     "pre-commit>=4.3.0",
+    "twine>=6.1.0",
 ]
