@@ -74,12 +74,12 @@ The package includes limits for the following Azure OpenAI models:
 - **Codex**: codex-mini
 - **GPT-3.5**: gpt-35-turbo, gpt-35-turbo-instruct
 - **GPT-4**: gpt-4, gpt-4-32k
-- **GPT-4 Turbo**: gpt-4.1, gpt-4.1-mini, gpt-4.1-nano
-- **GPT-4.5**: gpt-4.5-preview
+- **GPT-4.1**: gpt-4.1, gpt-4.1-mini, gpt-4.1-nano
 - **GPT-4o**: gpt-4o, gpt-4o-mini
 - **GPT-4o Audio**: gpt-4o-audio-preview, gpt-4o-mini-audio-preview
 - **GPT-4o Realtime**: gpt-4o-realtime-preview, gpt-4o-mini-realtime-preview
-- **GPT-5**: gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-chat
+- **GPT-5**: gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-chat, gpt-5-pro, gpt-5-codex
+- **GPT-5.1**: gpt-5.1, gpt-5.1-chat, gpt-5-codex, gpt-5-codex-mini
 - **GPT OSS**: gpt-oss-20b, gpt-oss-120b
 - **O1 Models**: o1, o1-mini, o1-preview
 - **O3 Models**: o3, o3-mini, o3-pro
@@ -93,7 +93,7 @@ Each model may have multiple versions with different limits. Use `azure-openai-l
 The model limits data in this package is sourced from the official Microsoft documentation:
 [Azure AI Foundry OpenAI Models](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models)
 
-**Last Updated:** August 19, 2025
+**Last Updated:** November 19, 2025
 
 ## API Reference
 

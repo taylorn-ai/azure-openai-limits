@@ -67,12 +67,6 @@
             "output": 32768
         }
     },
-    "gpt-4.5-preview": {
-        "default": {
-            "context": 128000,
-            "output": 16384
-        }
-    },
     "gpt-4o": {
         "default": {
             "context": 128000,
@@ -119,6 +113,12 @@
             "output": 128000
         }
     },
+    "gpt-5-chat": {
+        "default": {
+            "context": 128000,
+            "output": 16384
+        }
+    },
     "gpt-5-mini": {
         "default": {
             "context": 272000,
@@ -131,10 +131,40 @@
             "output": 128000
         }
     },
-    "gpt-5-chat": {
+    "gpt-5-pro": {
+        "default": {
+            "context": 400000,
+            "output": 128000
+        }
+    },
+    "gpt-5-codex": {
+        "default": {
+            "context": 400000,
+            "output": 128000
+        }
+    },
+    "gpt-5.1": {
+        "default": {
+            "context": 400000,
+            "output": 128000
+        }
+    },
+    "gpt-5.1-chat": {
         "default": {
             "context": 128000,
             "output": 16384
+        }
+    },
+    "gpt-5.1-codex": {
+        "default": {
+            "context": 400000,
+            "output": 128000
+        }
+    },
+    "gpt-5.1-codex-mini": {
+        "default": {
+            "context": 400000,
+            "output": 128000
         }
     },
     "gpt-oss-20b": {
