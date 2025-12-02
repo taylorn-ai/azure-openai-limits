@@ -11,7 +11,7 @@ from .api import (
 )
 from .types import Limits
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __all__ = [
     "Limits",
     "get_limits",
