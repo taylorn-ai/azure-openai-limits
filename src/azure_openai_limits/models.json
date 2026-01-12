@@ -167,6 +167,24 @@
             "output": 128000
         }
     },
+    "gpt-5.1-codex-max": {
+        "default": {
+            "context": 400000,
+            "output": 128000
+        }
+    },
+    "gpt-5.2": {
+        "default": {
+            "context": 400000,
+            "output": 128000
+        }
+    },
+    "gpt-5.2-chat": {
+        "default": {
+            "context": 128000,
+            "output": 16384
+        }
+    },
     "gpt-oss-20b": {
         "default": {
             "context": 131072,

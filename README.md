@@ -79,7 +79,8 @@ The package includes limits for the following Azure OpenAI models:
 - **GPT-4o Audio**: gpt-4o-audio-preview, gpt-4o-mini-audio-preview
 - **GPT-4o Realtime**: gpt-4o-realtime-preview, gpt-4o-mini-realtime-preview
 - **GPT-5**: gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-chat, gpt-5-pro, gpt-5-codex
-- **GPT-5.1**: gpt-5.1, gpt-5.1-chat, gpt-5-codex, gpt-5-codex-mini
+- **GPT-5.1**: gpt-5.1, gpt-5.1-chat, gpt-5-codex, gpt-5-codex-mini, gpt-5-codex-max
+- **GPT-5.2**: gpt-5.2, gpt-5.2-chat
 - **GPT OSS**: gpt-oss-20b, gpt-oss-120b
 - **O1 Models**: o1, o1-mini, o1-preview
 - **O3 Models**: o3, o3-mini, o3-pro
@@ -91,9 +92,9 @@ Each model may have multiple versions with different limits. Use `azure-openai-l
 ## Data Source
 
 The model limits data in this package is sourced from the official Microsoft documentation:
-[Azure AI Foundry OpenAI Models](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models)
+[Azure AI Foundry OpenAI Models](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models)
 
-**Last Updated:** November 19, 2025
+**Last Updated:** January 12, 2026
 
 ## API Reference
 
