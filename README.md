@@ -81,7 +81,7 @@ The package includes limits for the following Azure OpenAI models:
 - **GPT-5**: gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-chat, gpt-5-pro, gpt-5-codex
 - **GPT-5.1**: gpt-5.1, gpt-5.1-chat, gpt-5.1-codex, gpt-5.1-codex-mini, gpt-5.1-codex-max
 - **GPT-5.2**: gpt-5.2, gpt-5.2-chat
-- **GPT-5.3**: gpt-5.3-codex
+- **GPT-5.3**: gpt-5.3-chat, gpt-5.3-codex
 - **GPT-5.4**: gpt-5.4, gpt-5.4-pro
 - **GPT OSS**: gpt-oss-20b, gpt-oss-120b
 - **O1 Models**: o1, o1-mini, o1-preview
