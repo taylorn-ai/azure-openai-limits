@@ -105,6 +105,25 @@ def test_model_exists() -> None:
     assert model_exists("gpt-4o", "unknown-version") is False
 
 
+def test_new_gpt_53_and_54_model_limits() -> None:
+    """Test limits for newly added GPT-5.3 and GPT-5.4 models."""
+    gpt_53_codex = get_limits("gpt-5.3-codex")
+    assert gpt_53_codex.context == 400000
+    assert gpt_53_codex.output == 128000
+
+    gpt_54 = get_limits("gpt-5.4")
+    assert gpt_54.context == 1050000
+    assert gpt_54.output == 128000
+
+    gpt_54_pro = get_limits("gpt-5.4-pro")
+    assert gpt_54_pro.context == 400000
+    assert gpt_54_pro.output == 128000
+
+    assert model_exists("gpt-5.3-codex") is True
+    assert model_exists("gpt-5.4") is True
+    assert model_exists("gpt-5.4-pro") is True
+
+
 def test_limits_validation() -> None:
     """Test Limits dataclass validation."""
     # Valid limits

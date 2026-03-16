@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.5] - 2026-03-16
+
+### Added
+
+- GPT-5.3-codex model support
+- GPT-5.4 and GPT-5.4-pro model support
+- Tests validating new GPT-5.3/GPT-5.4 limits and model presence
+
 ## [0.1.4] - 2026-11-12
 
 ### Added
@@ -63,3 +71,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.1.3]: https://github.com/taylorn-ai/azure-openai-limits/releases/tag/v0.1.3
 [0.1.2]: https://github.com/taylorn-ai/azure-openai-limits/releases/tag/v0.1.2
 [0.1.1]: https://github.com/taylorn-ai/azure-openai-limits/releases/tag/v0.1.1
+[0.1.5]: https://github.com/taylorn-ai/azure-openai-limits/releases/tag/v0.1.5
