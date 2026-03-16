@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "azure-openai-limits"
-version = "0.1.4"
+version = "0.1.5"
 description = "Static token limits for Azure OpenAI models (context/output), with CLI."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -34,11 +34,11 @@ Changelog = "https://github.com/taylorn-ai/azure-openai-limits/releases"
 
 [project.optional-dependencies]
 dev = [
-    "ruff==0.12.9",
-    "mypy==1.17.1",
-    "pytest==8.4.1",
-    "isort==6.0.1",
-    "pre-commit==4.3.0",
+    "ruff==0.15.6",
+    "mypy==1.19.1",
+    "pytest==9.0.2",
+    "isort==8.0.1",
+    "pre-commit==4.5.1",
 ]
 
 [project.scripts]
@@ -72,6 +72,6 @@ skips = ["B101"]  # Skip assert_used test
 [dependency-groups]
 dev = [
     "bandit>=1.8.6",
-    "pre-commit>=4.3.0",
+    "pre-commit>=4.5.1",
     "twine>=6.1.0",
 ]

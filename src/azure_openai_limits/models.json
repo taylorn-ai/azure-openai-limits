@@ -185,6 +185,24 @@
             "output": 16384
         }
     },
+    "gpt-5.3-codex": {
+        "default": {
+            "context": 400000,
+            "output": 128000
+        }
+    },
+    "gpt-5.4": {
+        "default": {
+            "context": 1050000,
+            "output": 128000
+        }
+    },
+    "gpt-5.4-pro": {
+        "default": {
+            "context": 400000,
+            "output": 128000
+        }
+    },
     "gpt-oss-20b": {
         "default": {
             "context": 131072,
